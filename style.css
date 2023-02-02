@@ -23,15 +23,12 @@ body{
     top: 0px;
     border-radius: 3px solid black;
     border-width: thin;
-
-
-
 }
 
 .navbar ul{
     display: flex;
     list-style: none;
-    margin: 20px 10px;
+    margin: 1rem;
 }
 
 .navbar ul li{
@@ -39,7 +36,6 @@ body{
     font-weight: bold;
     text-decoration: none;
     font-size: 1.1rem;
-
 }
 
 .navbar ul li a{
@@ -117,21 +113,17 @@ body{
 
 
  }
-
- .MAIN{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 30%;
-    right: 10%;
- }
-
  .HEADINGS{
     font-family: century;
     font-size: 2em;
+    margin: 0 1rem;
     text-align: center;
-    margin: 28px 320px;
+ }
+ #btn {
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    top: 0.7rem;
  }
 
  .btn{
@@ -146,7 +138,7 @@ body{
     cursor:pointer;
     background-color: black;
     color: white;
-    box shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
     padding: 15px 40px;
 
 
@@ -167,8 +159,10 @@ body{
  }
 
  #mypicture img{
-    width: 575px;
-    height: 400px;
+    /* width: 575px;
+    height: 400px; */
+    width: 20rem;
+    height: 20rem;
  }
 
 #intro h2{
@@ -202,12 +196,12 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     box-sizing: border-box;
-
+    margin: 0 1rem;
 }
 
 .photos img{
-    width: 360px;
-    height: 240px;
+    width: 20rem;
+    height: 16rem;
     margin: 20px;
     border: 5px solid white;
     padding: 25px;
@@ -240,16 +234,13 @@ body{
 #services h1{
     font-family: century;
     font-size: 3em;
+    width: fit-content;
+    margin: auto;
     text-align: center;
-    margin: 28px 320px;
-    margin-bottom: 50px;
-    margin-top: 30px;
 }
 
 #services h2{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 10px;
+    text-align: center;
     font-size: 2rem;
 }
 
@@ -261,26 +252,28 @@ body{
     display: flex;
     flex-direction: column;
     width: 350px;
-    height: 450px;
+    height: 470px;
     border: 3px solid black;
     align-items:center;
     margin: 10px;
-    padding: 10px;
+    padding: 0 1.5rem 0 1.5rem;
     text-align: justify;
     border-radius: 15px;
     background: linear-gradient(to top , rgb(11, 10, 10) 50%, white 50%);
     transition: all 0.6s;
     background-size: 100% 200%;
-
-
-
 }
 
 .box li{
     margin-top: 0px;
     margin-bottom: 10px;
 }
-
+#servicesHeadWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.6rem;
+}
 .box:hover{
     background-position: left bottom;
     color: white;
@@ -301,7 +294,6 @@ body{
     height:60px;
     background-color: white;
     padding: 10px;
-
 }
 
 #skills{
@@ -363,10 +355,10 @@ body{
 #contact h1{
     font-family: century;
     font-size: 3em;
-    text-align: center;
-    margin: 28px 320px;
-    margin-bottom: 50px;
-    margin-top: 30px;
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    top: 1rem;
 }
  
 .media{
@@ -388,11 +380,23 @@ body{
 #socialize h1{
         font-family: century;
         font-size: 3em;
-        text-align: center;
-        margin: 28px 320px;
-        margin-bottom: 50px;
-        margin-top: 30px;
-     
+        margin: auto;
+        width: fit-content;
+        position: relative;
+        top: 1rem;
 
 }
     
+
+
+@media(max-width: 1100px) {
+    #mypicture {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width: 630px) {
+    .navbar {
+        display: none;
+    }
+}
